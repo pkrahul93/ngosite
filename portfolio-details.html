@@ -9,14 +9,13 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/ngologo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,9 +23,20 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    @media screen and (max-width:400px){
+      #msg2{
+        display: none;
+      }
+      #hero{
+        height:15rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -39,7 +49,7 @@
             href="mailto:contact@example.com">contact@example.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
       </div>
-      <div class="card" style="border: 1px solid gray;width:627px;height: 40px;">
+      <div class="card" id="msg2" style="border: 1px solid gray;width:627px;height: 40px;">
         <h2
           style="border:solid 1px gray;font-size: 14px;font-weight:700;width: 7rem;color: #fff;background-color: black;padding: 7px 3px 12px 3px;">
           News&Updates</h2>
@@ -65,18 +75,18 @@
     <div class="container d-flex justify-content-between">
 
       <div class="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="assets/img/ngologo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#" class="btn btn-warning" style="padding: 6px;border-radius:18px;color:#fff;font-weight:700;">Donate</a></li>
-          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
-          <!-- <li><a class="active" href="portfolio.html">Portfolio</a></li> -->
+          <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
           <li><a href="#">Blogs</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -208,11 +218,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Against Child Labour</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Against Pollution</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Poverty/Corruption</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Girl's Education</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Against Dowry System</a></li>
             </ul>
           </div>
 
