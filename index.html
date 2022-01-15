@@ -27,7 +27,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <style>
+    @media screen and (max-width:400px){
+      #msg2{
+        display: none;
+      }
+      #hero{
+        height:15rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -40,7 +49,7 @@
             href="mailto:contact@example.com">contact@example.com</a></i>
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
       </div>
-      <div class="card" style="border: 1px solid gray;width:627px;height: 40px;">
+      <div class="card" id="msg2" style="border: 1px solid gray;width:627px;height: 40px;">
         <h2
           style="border:solid 1px gray;font-size: 14px;font-weight:700;width: 7rem;color: #fff;background-color: black;padding: 7px 3px 12px 3px;">
           News&Updates</h2>
@@ -116,11 +125,12 @@
         );background-size:cover;">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
-              <h2 class="text-center">Welcome to <span>NGOwebsite</span></h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+              <!-- <h2 class="text-center">Welcome to <span>NGOwebsite</span></h2> -->
+              <!-- <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
                 Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
-                deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+                deleniti vel. Minus et tempore modi architecto.</p> -->
+                <img src="assets/img/bnr01.jpg" alt="" class="img-fluid">
+              <!-- <div class="text-center"><a href="" class="btn-get-started">Read More</a></div> -->
             </div>
           </div>
         </div>
@@ -465,7 +475,7 @@
       autoplayHoverPause: true,
       responsive: {
         0: {
-          items: 2,
+          items: 1,
           nav: false
         },
         600: {
